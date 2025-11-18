@@ -1,0 +1,524 @@
+# Load canceled
+# Compile of alu.sv was successful.
+# Compile of basic_tb.sv was successful.
+# Compile of controller.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of gcd.sv was successful.
+# Compile of memory.sv was successful.
+# Compile of top_module.sv was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.tb_hardcoded -voptargs=+acc
+# vsim work.tb_hardcoded -voptargs="+acc" 
+# Start time: 20:02:52 on Nov 17,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "controller(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_hardcoded(fast)
+# Loading work.top(fast)
+# Loading work.memory(fast)
+# Loading work.controller(fast)
+# Loading work.datapath(fast)
+# Loading work.alu(fast)
+# Loading work.gcd(fast)
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/clk
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/reset
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/go
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/instruction
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/done
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/enable
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/pc
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/opcode
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/a
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/b
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/invalid_opcode
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/state
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/next_state
+add wave -position end  sim:/tb_hardcoded/dut/datapath_inst/result
+add wave -position end  sim:/tb_hardcoded/dut/datapath_inst/data_done
+add wave -position end  sim:/tb_hardcoded/dut/datapath_inst/alu_result
+add wave -position end  sim:/tb_hardcoded/dut/datapath_inst/gcd_result
+add wave -position end  sim:/tb_hardcoded/dut/datapath_inst/result_reg
+run -all
+# Starting Testbench...
+# Displaying Memory Contents Iter=0 | Opcode=0001 | A=10 | B=5
+# Result_PASS | Opcode=1 A=10 B=5 | Result=15
+# .............................
+# Displaying Memory Contents Iter=1 | Opcode=0010 | A=20 | B=8
+# Result_PASS | Opcode=10 A=20 B=8 | Result=12
+# .............................
+# Displaying Memory Contents Iter=2 | Opcode=0011 | A=5 | B=3
+# Result_PASS | Opcode=11 A=5 B=3 | Result=15
+# .............................
+# Displaying Memory Contents Iter=3 | Opcode=1011 | A=85 | B=51
+# ** Error: FAIL | Opcode=1011 A=85 B=51 | Got=0, Expected=17
+#    Time: 155 ns  Scope: tb_hardcoded File: C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/basic_tb.sv Line: 122
+# Displaying Memory Contents Iter=4 | Opcode=0001 | A=10 | B=5
+# Result_PASS | Opcode=1 A=10 B=5 | Result=15
+# .............................
+# Displaying Memory Contents Iter=5 | Opcode=0010 | A=20 | B=8
+# Result_PASS | Opcode=10 A=20 B=8 | Result=12
+# .............................
+# Displaying Memory Contents Iter=6 | Opcode=0011 | A=5 | B=3
+# Result_PASS | Opcode=11 A=5 B=3 | Result=15
+# .............................
+# Displaying Memory Contents Iter=7 | Opcode=1011 | A=85 | B=51
+# ** Error: FAIL | Opcode=1011 A=85 B=51 | Got=0, Expected=17
+#    Time: 285 ns  Scope: tb_hardcoded File: C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/basic_tb.sv Line: 122
+# Displaying Memory Contents Iter=8 | Opcode=1111 | A=184 | B=253
+# Result_PASS | Opcode=1111 A=184 B=253 | Result=0
+# .............................
+# Displaying Memory Contents Iter=9 | Opcode=1101 | A=184 | B=253
+# Result_PASS | Opcode=1101 A=184 B=253 | Result=0
+# .............................
+# === Test Finished ===
+# ** Note: $finish    : C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/basic_tb.sv(134)
+#    Time: 375 ns  Iteration: 0  Instance: /tb_hardcoded
+# 1
+# Break in Module tb_hardcoded at C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/basic_tb.sv line 134
+# Causality operation skipped due to absence of debug database file
+quit -sim
+# End time: 20:28:23 on Nov 17,2025, Elapsed time: 0:25:31
+# Errors: 2, Warnings: 3
+# Compile of alu.sv was successful.
+# Compile of basic_tb.sv was successful.
+# Compile of controller.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of gcd.sv was successful.
+# Compile of memory.sv was successful.
+# Compile of top_module.sv was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tb_hardcoded
+# vsim -voptargs="+acc" work.tb_hardcoded 
+# Start time: 20:28:48 on Nov 17,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "controller(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_hardcoded(fast)
+# Loading work.top(fast)
+# Loading work.memory(fast)
+# Loading work.controller(fast)
+# Loading work.datapath(fast)
+# Loading work.alu(fast)
+# Loading work.gcd(fast)
+run -all
+# Starting Testbench...
+# Displaying Memory Contents Iter=0 | Opcode=0001 | A=10 | B=5
+# Result_PASS | Opcode=1 A=10 B=5 | Result=15
+# .............................
+# Displaying Memory Contents Iter=1 | Opcode=0010 | A=20 | B=8
+# Result_PASS | Opcode=10 A=20 B=8 | Result=12
+# .............................
+# Displaying Memory Contents Iter=2 | Opcode=0011 | A=5 | B=3
+# Result_PASS | Opcode=11 A=5 B=3 | Result=15
+# .............................
+# Displaying Memory Contents Iter=3 | Opcode=1011 | A=85 | B=51
+# ** Error: FAIL | Opcode=1011 A=85 B=51 | Got=0, Expected=17
+#    Time: 155 ns  Scope: tb_hardcoded File: C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/basic_tb.sv Line: 122
+# Displaying Memory Contents Iter=4 | Opcode=0001 | A=10 | B=5
+# Result_PASS | Opcode=1 A=10 B=5 | Result=15
+# .............................
+# Displaying Memory Contents Iter=5 | Opcode=0010 | A=20 | B=8
+# Result_PASS | Opcode=10 A=20 B=8 | Result=12
+# .............................
+# Displaying Memory Contents Iter=6 | Opcode=0011 | A=5 | B=3
+# Result_PASS | Opcode=11 A=5 B=3 | Result=15
+# .............................
+# Displaying Memory Contents Iter=7 | Opcode=1011 | A=85 | B=51
+# ** Error: FAIL | Opcode=1011 A=85 B=51 | Got=0, Expected=17
+#    Time: 285 ns  Scope: tb_hardcoded File: C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/basic_tb.sv Line: 122
+# Displaying Memory Contents Iter=8 | Opcode=1111 | A=184 | B=253
+# Result_PASS | Opcode=1111 A=184 B=253 | Result=0
+# .............................
+# Displaying Memory Contents Iter=9 | Opcode=1101 | A=184 | B=253
+# Result_PASS | Opcode=1101 A=184 B=253 | Result=0
+# .............................
+# === Test Finished ===
+# ** Note: $finish    : C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/basic_tb.sv(134)
+#    Time: 375 ns  Iteration: 0  Instance: /tb_hardcoded
+# 1
+# Break in Module tb_hardcoded at C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/basic_tb.sv line 134
+quit -sim
+# End time: 20:29:19 on Nov 17,2025, Elapsed time: 0:00:31
+# Errors: 2, Warnings: 3
+# Compile of alu.sv was successful.
+# Compile of basic_tb.sv was successful.
+# Compile of controller.sv failed with 1 errors.
+# Compile of datapath.sv was successful.
+# Compile of gcd.sv was successful.
+# Compile of memory.sv was successful.
+# Compile of top_module.sv was successful.
+# 7 compiles, 1 failed with 1 error.
+# Compile of alu.sv was successful.
+# Compile of basic_tb.sv was successful.
+# Compile of controller.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of gcd.sv was successful.
+# Compile of memory.sv was successful.
+# Compile of top_module.sv was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tb_hardcoded
+# vsim -voptargs="+acc" work.tb_hardcoded 
+# Start time: 20:37:56 on Nov 17,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "controller(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_hardcoded(fast)
+# Loading work.top(fast)
+# Loading work.memory(fast)
+# Loading work.controller(fast)
+# Loading work.datapath(fast)
+# Loading work.alu(fast)
+# Loading work.gcd(fast)
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/clk
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/reset
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/go
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/instruction
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/done
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/enable
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/pc
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/opcode
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/a
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/b
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/invalid_opcode
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/state
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/next_state
+add wave -position end  sim:/tb_hardcoded/dut/datapath_inst/result
+add wave -position end  sim:/tb_hardcoded/dut/datapath_inst/data_done
+add wave -position end  sim:/tb_hardcoded/dut/datapath_inst/alu_result
+add wave -position end  sim:/tb_hardcoded/dut/datapath_inst/gcd_result
+add wave -position end  sim:/tb_hardcoded/dut/datapath_inst/result_reg
+add wave -position end  sim:/tb_hardcoded/dut/datapath_inst/gcd_done
+add wave -position end  sim:/tb_hardcoded/dut/datapath_inst/done_reg
+run -all
+# Starting Testbench...
+# Displaying Memory Contents Iter=0 | Opcode=0001 | A=10 | B=5
+# Result_PASS | Opcode=1 A=10 B=5 | Result=15
+# .............................
+# Displaying Memory Contents Iter=1 | Opcode=0010 | A=20 | B=8
+# Result_PASS | Opcode=10 A=20 B=8 | Result=12
+# .............................
+# Displaying Memory Contents Iter=2 | Opcode=0011 | A=5 | B=3
+# Result_PASS | Opcode=11 A=5 B=3 | Result=15
+# .............................
+# Displaying Memory Contents Iter=3 | Opcode=1011 | A=85 | B=51
+# ** Error: FAIL | Opcode=1011 A=85 B=51 | Got=0, Expected=17
+#    Time: 155 ns  Scope: tb_hardcoded File: C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/basic_tb.sv Line: 122
+# Displaying Memory Contents Iter=4 | Opcode=0001 | A=10 | B=5
+# Result_PASS | Opcode=1 A=10 B=5 | Result=15
+# .............................
+# Displaying Memory Contents Iter=5 | Opcode=0010 | A=20 | B=8
+# Result_PASS | Opcode=10 A=20 B=8 | Result=12
+# .............................
+# Displaying Memory Contents Iter=6 | Opcode=0011 | A=5 | B=3
+# Result_PASS | Opcode=11 A=5 B=3 | Result=15
+# .............................
+# Displaying Memory Contents Iter=7 | Opcode=1011 | A=85 | B=51
+# ** Error: FAIL | Opcode=1011 A=85 B=51 | Got=0, Expected=17
+#    Time: 285 ns  Scope: tb_hardcoded File: C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/basic_tb.sv Line: 122
+# Displaying Memory Contents Iter=8 | Opcode=1111 | A=184 | B=253
+# Result_PASS | Opcode=1111 A=184 B=253 | Result=0
+# .............................
+# Displaying Memory Contents Iter=9 | Opcode=1101 | A=184 | B=253
+# Result_PASS | Opcode=1101 A=184 B=253 | Result=0
+# .............................
+# === Test Finished ===
+# ** Note: $finish    : C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/basic_tb.sv(134)
+#    Time: 365 ns  Iteration: 0  Instance: /tb_hardcoded
+# 1
+# Break in Module tb_hardcoded at C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/basic_tb.sv line 134
+quit -sim
+# End time: 20:43:00 on Nov 17,2025, Elapsed time: 0:05:04
+# Errors: 2, Warnings: 4
+# Compile of alu.sv was successful.
+# Compile of basic_tb.sv was successful.
+# Compile of controller.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of gcd.sv was successful.
+# Compile of memory.sv was successful.
+# Compile of top_module.sv was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tb_hardcoded
+# vsim -voptargs="+acc" work.tb_hardcoded 
+# Start time: 20:43:13 on Nov 17,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "controller(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_hardcoded(fast)
+# Loading work.top(fast)
+# Loading work.memory(fast)
+# Loading work.controller(fast)
+# Loading work.datapath(fast)
+# Loading work.alu(fast)
+# Loading work.gcd(fast)
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/clk
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/reset
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/go
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/instruction
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/done
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/enable
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/pc
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/opcode
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/a
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/b
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/invalid_opcode
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/state
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/next_state
+add wave -position end  sim:/tb_hardcoded/dut/datapath_inst/result
+add wave -position end  sim:/tb_hardcoded/dut/datapath_inst/data_done
+add wave -position end  sim:/tb_hardcoded/dut/datapath_inst/alu_result
+add wave -position end  sim:/tb_hardcoded/dut/datapath_inst/gcd_result
+add wave -position end  sim:/tb_hardcoded/dut/datapath_inst/result_reg
+add wave -position end  sim:/tb_hardcoded/dut/datapath_inst/gcd_done
+add wave -position end  sim:/tb_hardcoded/dut/datapath_inst/done_reg
+run -all
+# Starting Testbench...
+# Displaying Memory Contents Iter=0 | Opcode=0001 | A=10 | B=5
+# Result_PASS | Opcode=1 A=10 B=5 | Result=15
+# .............................
+# Displaying Memory Contents Iter=1 | Opcode=0010 | A=20 | B=8
+# Result_PASS | Opcode=10 A=20 B=8 | Result=12
+# .............................
+# Displaying Memory Contents Iter=2 | Opcode=0011 | A=5 | B=3
+# Result_PASS | Opcode=11 A=5 B=3 | Result=15
+# .............................
+# Displaying Memory Contents Iter=3 | Opcode=1011 | A=85 | B=51
+# ** Error: FAIL | Opcode=1011 A=85 B=51 | Got=0, Expected=17
+#    Time: 155 ns  Scope: tb_hardcoded File: C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/basic_tb.sv Line: 122
+# Displaying Memory Contents Iter=4 | Opcode=0001 | A=10 | B=5
+# ** Error: FAIL | Opcode=1 A=10 B=5 | Got=0, Expected=15
+#    Time: 185 ns  Scope: tb_hardcoded File: C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/basic_tb.sv Line: 122
+# Displaying Memory Contents Iter=5 | Opcode=0010 | A=20 | B=8
+# ** Error: FAIL | Opcode=10 A=20 B=8 | Got=0, Expected=12
+#    Time: 215 ns  Scope: tb_hardcoded File: C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/basic_tb.sv Line: 122
+# Displaying Memory Contents Iter=6 | Opcode=0011 | A=5 | B=3
+# ** Error: FAIL | Opcode=11 A=5 B=3 | Got=0, Expected=15
+#    Time: 245 ns  Scope: tb_hardcoded File: C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/basic_tb.sv Line: 122
+# Displaying Memory Contents Iter=7 | Opcode=1011 | A=85 | B=51
+# ** Error: FAIL | Opcode=1011 A=85 B=51 | Got=0, Expected=17
+#    Time: 275 ns  Scope: tb_hardcoded File: C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/basic_tb.sv Line: 122
+# Displaying Memory Contents Iter=8 | Opcode=1111 | A=184 | B=253
+# Result_PASS | Opcode=1111 A=184 B=253 | Result=0
+# .............................
+# Displaying Memory Contents Iter=9 | Opcode=1101 | A=184 | B=253
+# Result_PASS | Opcode=1101 A=184 B=253 | Result=0
+# .............................
+# === Test Finished ===
+# ** Note: $finish    : C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/basic_tb.sv(134)
+#    Time: 355 ns  Iteration: 0  Instance: /tb_hardcoded
+# 1
+# Break in Module tb_hardcoded at C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/basic_tb.sv line 134
+quit -sim
+# End time: 20:48:02 on Nov 17,2025, Elapsed time: 0:04:49
+# Errors: 5, Warnings: 3
+# Compile of alu.sv was successful.
+# Compile of basic_tb.sv was successful.
+# Compile of controller.sv failed with 3 errors.
+# Compile of datapath.sv was successful.
+# Compile of gcd.sv was successful.
+# Compile of memory.sv was successful.
+# Compile of top_module.sv was successful.
+# 7 compiles, 1 failed with 3 errors.
+# Compile of alu.sv was successful.
+# Compile of basic_tb.sv was successful.
+# Compile of controller.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of gcd.sv was successful.
+# Compile of memory.sv was successful.
+# Compile of top_module.sv was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tb_hardcoded
+# vsim -voptargs="+acc" work.tb_hardcoded 
+# Start time: 20:48:51 on Nov 17,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "controller(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_hardcoded(fast)
+# Loading work.top(fast)
+# Loading work.memory(fast)
+# Loading work.controller(fast)
+# Loading work.datapath(fast)
+# Loading work.alu(fast)
+# Loading work.gcd(fast)
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/clk
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/reset
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/go
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/instruction
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/done
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/enable
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/pc
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/opcode
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/a
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/b
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/invalid_opcode
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/state
+add wave -position end  sim:/tb_hardcoded/dut/ctrl_inst/next_state
+add wave -position end  sim:/tb_hardcoded/dut/datapath_inst/result
+add wave -position end  sim:/tb_hardcoded/dut/datapath_inst/data_done
+add wave -position end  sim:/tb_hardcoded/dut/datapath_inst/alu_result
+add wave -position end  sim:/tb_hardcoded/dut/datapath_inst/gcd_result
+add wave -position end  sim:/tb_hardcoded/dut/datapath_inst/result_reg
+add wave -position end  sim:/tb_hardcoded/dut/datapath_inst/gcd_done
+add wave -position end  sim:/tb_hardcoded/dut/datapath_inst/done_reg
+run -all
+# Starting Testbench...
+# Displaying Memory Contents Iter=0 | Opcode=0001 | A=10 | B=5
+# Result_PASS | Opcode=1 A=10 B=5 | Result=15
+# .............................
+# Displaying Memory Contents Iter=1 | Opcode=0010 | A=20 | B=8
+# Result_PASS | Opcode=10 A=20 B=8 | Result=12
+# .............................
+# Displaying Memory Contents Iter=2 | Opcode=0011 | A=5 | B=3
+# Result_PASS | Opcode=11 A=5 B=3 | Result=15
+# .............................
+# Displaying Memory Contents Iter=3 | Opcode=1011 | A=85 | B=51
+# ** Error: FAIL | Opcode=1011 A=85 B=51 | Got=0, Expected=17
+#    Time: 185 ns  Scope: tb_hardcoded File: C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/basic_tb.sv Line: 122
+# Displaying Memory Contents Iter=4 | Opcode=0001 | A=10 | B=5
+# Result_PASS | Opcode=1 A=10 B=5 | Result=15
+# .............................
+# Displaying Memory Contents Iter=5 | Opcode=0010 | A=20 | B=8
+# Result_PASS | Opcode=10 A=20 B=8 | Result=12
+# .............................
+# Displaying Memory Contents Iter=6 | Opcode=0011 | A=5 | B=3
+# Result_PASS | Opcode=11 A=5 B=3 | Result=15
+# .............................
+# Displaying Memory Contents Iter=7 | Opcode=1011 | A=85 | B=51
+# ** Error: FAIL | Opcode=1011 A=85 B=51 | Got=0, Expected=17
+#    Time: 345 ns  Scope: tb_hardcoded File: C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/basic_tb.sv Line: 122
+# Displaying Memory Contents Iter=8 | Opcode=1111 | A=184 | B=253
+# Result_PASS | Opcode=1111 A=184 B=253 | Result=0
+# .............................
+# Displaying Memory Contents Iter=9 | Opcode=1101 | A=184 | B=253
+# Result_PASS | Opcode=1101 A=184 B=253 | Result=0
+# .............................
+# === Test Finished ===
+# ** Note: $finish    : C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/basic_tb.sv(134)
+#    Time: 425 ns  Iteration: 0  Instance: /tb_hardcoded
+# 1
+# Break in Module tb_hardcoded at C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/basic_tb.sv line 134
+quit -sim
+# End time: 20:53:04 on Nov 17,2025, Elapsed time: 0:04:13
+# Errors: 2, Warnings: 4
+# Compile of alu.sv was successful.
+# Compile of basic_tb.sv was successful.
+# Compile of controller.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of gcd.sv was successful.
+# Compile of memory.sv was successful.
+# Compile of top_module.sv was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tb_hardcoded
+# vsim -voptargs="+acc" work.tb_hardcoded 
+# Start time: 20:53:40 on Nov 17,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "controller(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_hardcoded(fast)
+# Loading work.top(fast)
+# Loading work.memory(fast)
+# Loading work.controller(fast)
+# Loading work.datapath(fast)
+# Loading work.alu(fast)
+# Loading work.gcd(fast)
+run -all
+# Starting Testbench...
+# Displaying Memory Contents Iter=0 | Opcode=0001 | A=10 | B=5
+# Result_PASS | Opcode=1 A=10 B=5 | Result=15
+# .............................
+# Displaying Memory Contents Iter=1 | Opcode=0010 | A=20 | B=8
+# Result_PASS | Opcode=10 A=20 B=8 | Result=12
+# .............................
+# Displaying Memory Contents Iter=2 | Opcode=0011 | A=5 | B=3
+# Result_PASS | Opcode=11 A=5 B=3 | Result=15
+# .............................
+# Displaying Memory Contents Iter=3 | Opcode=1011 | A=85 | B=51
+# Result_PASS | Opcode=1011 A=85 B=51 | Result=17
+# .............................
+# Displaying Memory Contents Iter=4 | Opcode=0001 | A=10 | B=5
+# Result_PASS | Opcode=1 A=10 B=5 | Result=15
+# .............................
+# Displaying Memory Contents Iter=5 | Opcode=0010 | A=20 | B=8
+# Result_PASS | Opcode=10 A=20 B=8 | Result=12
+# .............................
+# Displaying Memory Contents Iter=6 | Opcode=0011 | A=5 | B=3
+# Result_PASS | Opcode=11 A=5 B=3 | Result=15
+# .............................
+# Displaying Memory Contents Iter=7 | Opcode=1011 | A=85 | B=51
+# Result_PASS | Opcode=1011 A=85 B=51 | Result=17
+# .............................
+# Displaying Memory Contents Iter=8 | Opcode=1111 | A=184 | B=253
+# Result_PASS | Opcode=1111 A=184 B=253 | Result=0
+# .............................
+# Displaying Memory Contents Iter=9 | Opcode=1101 | A=184 | B=253
+# Result_PASS | Opcode=1101 A=184 B=253 | Result=0
+# .............................
+# === Test Finished ===
+# ** Note: $finish    : C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/basic_tb.sv(134)
+#    Time: 445 ns  Iteration: 0  Instance: /tb_hardcoded
+# 1
+# Break in Module tb_hardcoded at C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/basic_tb.sv line 134
+quit -sim
+# End time: 21:15:31 on Nov 17,2025, Elapsed time: 0:21:51
+# Errors: 0, Warnings: 3
+# Compile of alu.sv was successful.
+# Compile of basic_tb.sv was successful.
+# Compile of controller.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of gcd.sv was successful.
+# Compile of memory.sv was successful.
+# Compile of top_module.sv was successful.
+# Compile of tb_part2.sv was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tb_randomize_p2
+# vsim -voptargs="+acc" work.tb_randomize_p2 
+# Start time: 21:18:43 on Nov 17,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "controller(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "gcd(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_randomize_p2(fast)
+# Loading work.top(fast)
+# Loading work.memory(fast)
+# Loading work.controller(fast)
+# Loading work.datapath(fast)
+# Loading work.alu(fast)
+# Loading work.gcd(fast)
+# ** Error: Failure to checkout svverification license feature.
+# ** Error: (vsim-1) Unable to checkout verification license - required for testbench features (randomize, randcase, randsequence, covergroup).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_randomize_p2 File: C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/tb_part2.sv
+# Error loading design
+# End time: 21:18:47 on Nov 17,2025, Elapsed time: 0:00:04
+# Errors: 2, Warnings: 4
+# Load canceled
+vsim -voptargs=+acc work.tb_randomize_p2
+# vsim -voptargs="+acc" work.tb_randomize_p2 
+# Start time: 21:39:32 on Nov 17,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading sv_std.std
+# Loading work.tb_randomize_p2(fast)
+# Loading work.top(fast)
+# Loading work.memory(fast)
+# Loading work.controller(fast)
+# Loading work.datapath(fast)
+# Loading work.alu(fast)
+# Loading work.gcd(fast)
+# ** Error: Failure to checkout svverification license feature.
+# ** Error: (vsim-1) Unable to checkout verification license - required for testbench features (randomize, randcase, randsequence, covergroup).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_randomize_p2 File: C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/tb_part2.sv
+# Error loading design
+# End time: 21:39:34 on Nov 17,2025, Elapsed time: 0:00:02
+# Errors: 2, Warnings: 1

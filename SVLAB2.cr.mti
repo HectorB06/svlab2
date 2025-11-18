@@ -1,0 +1,43 @@
+{C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/memory.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/memory.sv}
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module memory
+
+Top level modules:
+	memory
+
+} {} {}} {C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/gcd.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/gcd.sv}
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module gcd
+
+Top level modules:
+	gcd
+
+} {} {}} {C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/alu.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/alu.sv}
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} {C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/datapath.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/datapath.sv}
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module datapath
+
+Top level modules:
+	datapath
+
+} {} {}} {C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/basic_tb.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/basic_tb.sv}
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module tb_hardcoded
+
+Top level modules:
+	tb_hardcoded
+
+} {} {}} {C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/top_module.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/Hector Borjas/OneDrive/Desktop/School/EEL4712C/SVLAB2/top_module.sv}
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}}
