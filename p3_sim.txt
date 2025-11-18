@@ -1,0 +1,337 @@
+
+# Compile of alu.sv was successful.
+# Compile of basic_tb.sv was successful.
+# Compile of controller.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of gcd.sv was successful.
+# Compile of memory.sv was successful.
+# Compile of tb_part2.sv was successful.
+# Compile of top_module.sv was successful.
+# Compile of tb_part3.sv was successful.
+# 9 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tb_randomize_p3
+# vsim -voptargs="+acc" work.tb_randomize_p3 
+# Start time: 23:33:55 on Nov 17,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "controller(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "gcd(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_randomize_p3(fast)
+# Loading work.top(fast)
+# Loading work.memory(fast)
+# Loading work.controller(fast)
+# Loading work.datapath(fast)
+# Loading work.alu(fast)
+# Loading work.gcd(fast)
+run -all
+# === Starting CRV Testbench ===
+# Displaying Memory Contents Iter=0 | Opcode=0001 | A=23 | B=23
+# Result_PASS | Opcode=0001 A=23 B=23 | Result=46
+# .............................
+# Displaying Memory Contents Iter=1 | Opcode=0001 | A=28 | B=5
+# Result_PASS | Opcode=0001 A=28 B=5 | Result=33
+# .............................
+# Displaying Memory Contents Iter=2 | Opcode=0010 | A=207 | B=49
+# Result_PASS | Opcode=0010 A=207 B=49 | Result=158
+# .............................
+# Displaying Memory Contents Iter=3 | Opcode=0001 | A=8 | B=19
+# Result_PASS | Opcode=0001 A=8 B=19 | Result=27
+# .............................
+# Displaying Memory Contents Iter=4 | Opcode=0001 | A=18 | B=39
+# Result_PASS | Opcode=0001 A=18 B=39 | Result=57
+# .............................
+# Displaying Memory Contents Iter=5 | Opcode=0001 | A=38 | B=37
+# Result_PASS | Opcode=0001 A=38 B=37 | Result=75
+# .............................
+# Displaying Memory Contents Iter=6 | Opcode=0011 | A=94 | B=55
+# Result_PASS | Opcode=0011 A=94 B=55 | Result=5170
+# .............................
+# Displaying Memory Contents Iter=7 | Opcode=0010 | A=218 | B=186
+# Result_PASS | Opcode=0010 A=218 B=186 | Result=32
+# .............................
+# Displaying Memory Contents Iter=8 | Opcode=0001 | A=5 | B=4
+# Result_PASS | Opcode=0001 A=5 B=4 | Result=9
+# .............................
+# Displaying Memory Contents Iter=9 | Opcode=0010 | A=13 | B=11
+# Result_PASS | Opcode=0010 A=13 B=11 | Result=2
+# .............................
+# Displaying Memory Contents Iter=10 | Opcode=0001 | A=40 | B=1
+# Result_PASS | Opcode=0001 A=40 B=1 | Result=41
+# .............................
+# Displaying Memory Contents Iter=11 | Opcode=0001 | A=38 | B=37
+# Result_PASS | Opcode=0001 A=38 B=37 | Result=75
+# .............................
+# Displaying Memory Contents Iter=12 | Opcode=0001 | A=4 | B=35
+# Result_PASS | Opcode=0001 A=4 B=35 | Result=39
+# .............................
+# Displaying Memory Contents Iter=13 | Opcode=0010 | A=245 | B=239
+# Result_PASS | Opcode=0010 A=245 B=239 | Result=6
+# .............................
+# Displaying Memory Contents Iter=14 | Opcode=0010 | A=200 | B=15
+# Result_PASS | Opcode=0010 A=200 B=15 | Result=185
+# .............................
+# Displaying Memory Contents Iter=15 | Opcode=0010 | A=162 | B=22
+# Result_PASS | Opcode=0010 A=162 B=22 | Result=140
+# .............................
+# Displaying Memory Contents Iter=16 | Opcode=0010 | A=30 | B=17
+# Result_PASS | Opcode=0010 A=30 B=17 | Result=13
+# .............................
+# Displaying Memory Contents Iter=17 | Opcode=0010 | A=83 | B=82
+# Result_PASS | Opcode=0010 A=83 B=82 | Result=1
+# .............................
+# Displaying Memory Contents Iter=18 | Opcode=0001 | A=45 | B=19
+# Result_PASS | Opcode=0001 A=45 B=19 | Result=64
+# .............................
+# Displaying Memory Contents Iter=19 | Opcode=0001 | A=30 | B=25
+# Result_PASS | Opcode=0001 A=30 B=25 | Result=55
+# .............................
+# Displaying Memory Contents Iter=20 | Opcode=0001 | A=39 | B=34
+# Result_PASS | Opcode=0001 A=39 B=34 | Result=73
+# .............................
+# Displaying Memory Contents Iter=21 | Opcode=0011 | A=188 | B=19
+# Result_PASS | Opcode=0011 A=188 B=19 | Result=3572
+# .............................
+# Displaying Memory Contents Iter=22 | Opcode=0001 | A=47 | B=23
+# Result_PASS | Opcode=0001 A=47 B=23 | Result=70
+# .............................
+# Displaying Memory Contents Iter=23 | Opcode=0011 | A=34 | B=177
+# Result_PASS | Opcode=0011 A=34 B=177 | Result=6018
+# .............................
+# Displaying Memory Contents Iter=24 | Opcode=0001 | A=20 | B=39
+# Result_PASS | Opcode=0001 A=20 B=39 | Result=59
+# .............................
+# Displaying Memory Contents Iter=25 | Opcode=0001 | A=10 | B=26
+# Result_PASS | Opcode=0001 A=10 B=26 | Result=36
+# .............................
+# Displaying Memory Contents Iter=26 | Opcode=0001 | A=37 | B=17
+# Result_PASS | Opcode=0001 A=37 B=17 | Result=54
+# .............................
+# Displaying Memory Contents Iter=27 | Opcode=0010 | A=7 | B=0
+# Result_PASS | Opcode=0010 A=7 B=0 | Result=7
+# .............................
+# Displaying Memory Contents Iter=28 | Opcode=0010 | A=251 | B=73
+# Result_PASS | Opcode=0010 A=251 B=73 | Result=178
+# .............................
+# Displaying Memory Contents Iter=29 | Opcode=0001 | A=44 | B=29
+# Result_PASS | Opcode=0001 A=44 B=29 | Result=73
+# .............................
+# Displaying Memory Contents Iter=30 | Opcode=0001 | A=47 | B=28
+# Result_PASS | Opcode=0001 A=47 B=28 | Result=75
+# .............................
+# Displaying Memory Contents Iter=31 | Opcode=0001 | A=16 | B=8
+# Result_PASS | Opcode=0001 A=16 B=8 | Result=24
+# .............................
+# Displaying Memory Contents Iter=32 | Opcode=0001 | A=37 | B=10
+# Result_PASS | Opcode=0001 A=37 B=10 | Result=47
+# .............................
+# Displaying Memory Contents Iter=33 | Opcode=0010 | A=106 | B=97
+# Result_PASS | Opcode=0010 A=106 B=97 | Result=9
+# .............................
+# Displaying Memory Contents Iter=34 | Opcode=0010 | A=63 | B=48
+# Result_PASS | Opcode=0010 A=63 B=48 | Result=15
+# .............................
+# Displaying Memory Contents Iter=35 | Opcode=1011 | A=186 | B=51
+# Result_PASS | Opcode=1011 A=186 B=51 | Result=3
+# .............................
+# Displaying Memory Contents Iter=36 | Opcode=0010 | A=222 | B=104
+# Result_PASS | Opcode=0010 A=222 B=104 | Result=118
+# .............................
+# Displaying Memory Contents Iter=37 | Opcode=0001 | A=24 | B=21
+# Result_PASS | Opcode=0001 A=24 B=21 | Result=45
+# .............................
+# Displaying Memory Contents Iter=38 | Opcode=0001 | A=14 | B=8
+# Result_PASS | Opcode=0001 A=14 B=8 | Result=22
+# .............................
+# Displaying Memory Contents Iter=39 | Opcode=0010 | A=237 | B=121
+# Result_PASS | Opcode=0010 A=237 B=121 | Result=116
+# .............................
+# Displaying Memory Contents Iter=40 | Opcode=0010 | A=68 | B=41
+# Result_PASS | Opcode=0010 A=68 B=41 | Result=27
+# .............................
+# Displaying Memory Contents Iter=41 | Opcode=0001 | A=30 | B=38
+# Result_PASS | Opcode=0001 A=30 B=38 | Result=68
+# .............................
+# Displaying Memory Contents Iter=42 | Opcode=0010 | A=177 | B=118
+# Result_PASS | Opcode=0010 A=177 B=118 | Result=59
+# .............................
+# Displaying Memory Contents Iter=43 | Opcode=0010 | A=247 | B=241
+# Result_PASS | Opcode=0010 A=247 B=241 | Result=6
+# .............................
+# Displaying Memory Contents Iter=44 | Opcode=0010 | A=255 | B=225
+# Result_PASS | Opcode=0010 A=255 B=225 | Result=30
+# .............................
+# Displaying Memory Contents Iter=45 | Opcode=0010 | A=220 | B=171
+# Result_PASS | Opcode=0010 A=220 B=171 | Result=49
+# .............................
+# Displaying Memory Contents Iter=46 | Opcode=0001 | A=8 | B=48
+# Result_PASS | Opcode=0001 A=8 B=48 | Result=56
+# .............................
+# Displaying Memory Contents Iter=47 | Opcode=0010 | A=243 | B=218
+# Result_PASS | Opcode=0010 A=243 B=218 | Result=25
+# .............................
+# Displaying Memory Contents Iter=48 | Opcode=0001 | A=38 | B=26
+# Result_PASS | Opcode=0001 A=38 B=26 | Result=64
+# .............................
+# Displaying Memory Contents Iter=49 | Opcode=0001 | A=2 | B=9
+# Result_PASS | Opcode=0001 A=2 B=9 | Result=11
+# .............................
+# Displaying Memory Contents Iter=50 | Opcode=0001 | A=49 | B=14
+# Result_PASS | Opcode=0001 A=49 B=14 | Result=63
+# .............................
+# Displaying Memory Contents Iter=51 | Opcode=0001 | A=27 | B=32
+# Result_PASS | Opcode=0001 A=27 B=32 | Result=59
+# .............................
+# Displaying Memory Contents Iter=52 | Opcode=0010 | A=122 | B=60
+# Result_PASS | Opcode=0010 A=122 B=60 | Result=62
+# .............................
+# Displaying Memory Contents Iter=53 | Opcode=0001 | A=18 | B=41
+# Result_PASS | Opcode=0001 A=18 B=41 | Result=59
+# .............................
+# Displaying Memory Contents Iter=54 | Opcode=0011 | A=190 | B=107
+# Result_PASS | Opcode=0011 A=190 B=107 | Result=20330
+# .............................
+# Displaying Memory Contents Iter=55 | Opcode=0010 | A=82 | B=25
+# Result_PASS | Opcode=0010 A=82 B=25 | Result=57
+# .............................
+# Displaying Memory Contents Iter=56 | Opcode=0011 | A=138 | B=81
+# Result_PASS | Opcode=0011 A=138 B=81 | Result=11178
+# .............................
+# Displaying Memory Contents Iter=57 | Opcode=0001 | A=34 | B=43
+# Result_PASS | Opcode=0001 A=34 B=43 | Result=77
+# .............................
+# Displaying Memory Contents Iter=58 | Opcode=0001 | A=5 | B=1
+# Result_PASS | Opcode=0001 A=5 B=1 | Result=6
+# .............................
+# Displaying Memory Contents Iter=59 | Opcode=0001 | A=23 | B=49
+# Result_PASS | Opcode=0001 A=23 B=49 | Result=72
+# .............................
+# Displaying Memory Contents Iter=60 | Opcode=0011 | A=184 | B=161
+# Result_PASS | Opcode=0011 A=184 B=161 | Result=29624
+# .............................
+# Displaying Memory Contents Iter=61 | Opcode=0011 | A=44 | B=147
+# Result_PASS | Opcode=0011 A=44 B=147 | Result=6468
+# .............................
+# Displaying Memory Contents Iter=62 | Opcode=0010 | A=123 | B=80
+# Result_PASS | Opcode=0010 A=123 B=80 | Result=43
+# .............................
+# Displaying Memory Contents Iter=63 | Opcode=0010 | A=241 | B=210
+# Result_PASS | Opcode=0010 A=241 B=210 | Result=31
+# .............................
+# Displaying Memory Contents Iter=64 | Opcode=0010 | A=238 | B=209
+# Result_PASS | Opcode=0010 A=238 B=209 | Result=29
+# .............................
+# Displaying Memory Contents Iter=65 | Opcode=0001 | A=45 | B=46
+# Result_PASS | Opcode=0001 A=45 B=46 | Result=91
+# .............................
+# Displaying Memory Contents Iter=66 | Opcode=0011 | A=86 | B=27
+# Result_PASS | Opcode=0011 A=86 B=27 | Result=2322
+# .............................
+# Displaying Memory Contents Iter=67 | Opcode=0010 | A=164 | B=124
+# Result_PASS | Opcode=0010 A=164 B=124 | Result=40
+# .............................
+# Displaying Memory Contents Iter=68 | Opcode=0011 | A=20 | B=197
+# Result_PASS | Opcode=0011 A=20 B=197 | Result=3940
+# .............................
+# Displaying Memory Contents Iter=69 | Opcode=0010 | A=101 | B=32
+# Result_PASS | Opcode=0010 A=101 B=32 | Result=69
+# .............................
+# Displaying Memory Contents Iter=70 | Opcode=0010 | A=106 | B=59
+# Result_PASS | Opcode=0010 A=106 B=59 | Result=47
+# .............................
+# Displaying Memory Contents Iter=71 | Opcode=0010 | A=67 | B=44
+# Result_PASS | Opcode=0010 A=67 B=44 | Result=23
+# .............................
+# Displaying Memory Contents Iter=72 | Opcode=0011 | A=42 | B=189
+# Result_PASS | Opcode=0011 A=42 B=189 | Result=7938
+# .............................
+# Displaying Memory Contents Iter=73 | Opcode=0001 | A=41 | B=1
+# Result_PASS | Opcode=0001 A=41 B=1 | Result=42
+# .............................
+# Displaying Memory Contents Iter=74 | Opcode=0001 | A=0 | B=37
+# Result_PASS | Opcode=0001 A=0 B=37 | Result=37
+# .............................
+# Displaying Memory Contents Iter=75 | Opcode=0001 | A=20 | B=24
+# Result_PASS | Opcode=0001 A=20 B=24 | Result=44
+# .............................
+# Displaying Memory Contents Iter=76 | Opcode=1011 | A=198 | B=206
+# Result_PASS | Opcode=1011 A=198 B=206 | Result=2
+# .............................
+# Displaying Memory Contents Iter=77 | Opcode=0010 | A=93 | B=78
+# Result_PASS | Opcode=0010 A=93 B=78 | Result=15
+# .............................
+# Displaying Memory Contents Iter=78 | Opcode=0010 | A=104 | B=81
+# Result_PASS | Opcode=0010 A=104 B=81 | Result=23
+# .............................
+# Displaying Memory Contents Iter=79 | Opcode=0001 | A=47 | B=30
+# Result_PASS | Opcode=0001 A=47 B=30 | Result=77
+# .............................
+# Displaying Memory Contents Iter=80 | Opcode=0011 | A=218 | B=39
+# Result_PASS | Opcode=0011 A=218 B=39 | Result=8502
+# .............................
+# Displaying Memory Contents Iter=81 | Opcode=0001 | A=27 | B=34
+# Result_PASS | Opcode=0001 A=27 B=34 | Result=61
+# .............................
+# Displaying Memory Contents Iter=82 | Opcode=0001 | A=15 | B=25
+# Result_PASS | Opcode=0001 A=15 B=25 | Result=40
+# .............................
+# Displaying Memory Contents Iter=83 | Opcode=0010 | A=224 | B=76
+# Result_PASS | Opcode=0010 A=224 B=76 | Result=148
+# .............................
+# Displaying Memory Contents Iter=84 | Opcode=0001 | A=28 | B=28
+# Result_PASS | Opcode=0001 A=28 B=28 | Result=56
+# .............................
+# Displaying Memory Contents Iter=85 | Opcode=0010 | A=201 | B=31
+# Result_PASS | Opcode=0010 A=201 B=31 | Result=170
+# .............................
+# Displaying Memory Contents Iter=86 | Opcode=0011 | A=78 | B=39
+# Result_PASS | Opcode=0011 A=78 B=39 | Result=3042
+# .............................
+# Displaying Memory Contents Iter=87 | Opcode=0010 | A=139 | B=113
+# Result_PASS | Opcode=0010 A=139 B=113 | Result=26
+# .............................
+# Displaying Memory Contents Iter=88 | Opcode=0011 | A=28 | B=221
+# Result_PASS | Opcode=0011 A=28 B=221 | Result=6188
+# .............................
+# Displaying Memory Contents Iter=89 | Opcode=0010 | A=234 | B=226
+# Result_PASS | Opcode=0010 A=234 B=226 | Result=8
+# .............................
+# Displaying Memory Contents Iter=90 | Opcode=0010 | A=18 | B=0
+# Result_PASS | Opcode=0010 A=18 B=0 | Result=18
+# .............................
+# Displaying Memory Contents Iter=91 | Opcode=0010 | A=31 | B=11
+# Result_PASS | Opcode=0010 A=31 B=11 | Result=20
+# .............................
+# Displaying Memory Contents Iter=92 | Opcode=0010 | A=238 | B=224
+# Result_PASS | Opcode=0010 A=238 B=224 | Result=14
+# .............................
+# Displaying Memory Contents Iter=93 | Opcode=0010 | A=184 | B=113
+# Result_PASS | Opcode=0010 A=184 B=113 | Result=71
+# .............................
+# Displaying Memory Contents Iter=94 | Opcode=0010 | A=193 | B=41
+# Result_PASS | Opcode=0010 A=193 B=41 | Result=152
+# .............................
+# Displaying Memory Contents Iter=95 | Opcode=0010 | A=81 | B=28
+# Result_PASS | Opcode=0010 A=81 B=28 | Result=53
+# .............................
+# Displaying Memory Contents Iter=96 | Opcode=0001 | A=24 | B=39
+# Result_PASS | Opcode=0001 A=24 B=39 | Result=63
+# .............................
+# Displaying Memory Contents Iter=97 | Opcode=0010 | A=249 | B=236
+# Result_PASS | Opcode=0010 A=249 B=236 | Result=13
+# .............................
+# Displaying Memory Contents Iter=98 | Opcode=1011 | A=120 | B=182
+# Result_PASS | Opcode=1011 A=120 B=182 | Result=2
+# .............................
+# Displaying Memory Contents Iter=99 | Opcode=0001 | A=33 | B=37
+# Result_PASS | Opcode=0001 A=33 B=37 | Result=70
+# .............................
+# === Test Finished ===
+# ** Note: $finish    : /ecel/UFAD/hborjas/Downloads/svlab2-main/tb_part3.sv(212)
+#    Time: 3255 ns  Iteration: 0  Instance: /tb_randomize_p3
+# 1
+# Break in Module tb_randomize_p3 at /ecel/UFAD/hborjas/Downloads/svlab2-main/tb_part3.sv line 212
+
+
+
