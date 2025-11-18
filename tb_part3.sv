@@ -1,4 +1,4 @@
-module tb_randomize_p2;
+module tb_randomize_p3;
 
 // Parameters
 localparam int WIDTH = 16;
@@ -214,3 +214,4 @@ localparam int PROG_LEN =100;
 
 
 endmodule
+
